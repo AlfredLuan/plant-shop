@@ -11,7 +11,7 @@
       "en": "Healthy green pepper plant with stable fruiting, ideal for balconies.",
       "sv": "Frisk paprikaplanta med jämn skörd, perfekt för balkongodling."
     },
-    "price": 95,
+    "price": 30,
     "currency": "SEK",
     "images": [
       "green-pepper.jpg",
@@ -41,12 +41,13 @@
       "en": "Vigorous loquat seedling with deep green leaves, suitable for gardens or large pots.",
       "sv": "Kraftig mispelplanta med mörkgröna blad, passar trädgård eller stor kruka."
     },
-    "price": 180,
+    "price": 50,
     "currency": "SEK",
     "images": [
       "loquat.jpg",
       "loquat-1.jpg",
-      "loquat-2.jpg"
+      "loquat-2.jpg",
+      "loquat-3.jpg"
     ],
     "light": {
       "zh": "明亮光线",
@@ -72,12 +73,13 @@
       "en": "Compact tropical seedling with decorative foliage, best in warm conditions.",
       "sv": "Kompakt tropisk planta med dekorativa blad, trivs bäst i varmt klimat."
     },
-    "price": 210,
+    "price": 50,
     "currency": "SEK",
     "images": [
       "lychee.jpg",
       "lychee-1.jpg",
-      "lychee-2.jpg"
+      "lychee-2.jpg",
+      "lychee-3.jpg"
     ],
     "light": {
       "zh": "明亮散射光",
@@ -103,7 +105,7 @@
       "en": "Fast-growing pumpkin seedling for patios and gardens, producing large fruits later.",
       "sv": "Snabbväxande pumpaplanta för uteplats och trädgård, kan ge stora frukter."
     },
-    "price": 85,
+    "price": 50,
     "currency": "SEK",
     "images": [
       "pumpkin.jpg",
@@ -134,7 +136,7 @@
       "en": "Great for summer planting with vigorous vines and lush leaves.",
       "sv": "Perfekt för sommarodling med kraftiga rankor och frodig bladmassa."
     },
-    "price": 90,
+    "price": 30,
     "currency": "SEK",
     "images": [
       "water-melon.jpg"
@@ -163,7 +165,7 @@
       "en": "Dual-purpose decorative and fruit seedling with upright foliage for warm indoor/outdoor spots.",
       "sv": "Både prydnads- och fruktplanta med upprätta blad för varma inom- och utomhusmiljöer."
     },
-    "price": 240,
+    "price": 50,
     "currency": "SEK",
     "images": [
       "mango.jpg"
