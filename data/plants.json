@@ -1,0 +1,183 @@
+[
+  {
+    "id": "plant-001",
+    "name": {
+      "zh": "青椒盆栽",
+      "en": "Green Pepper Plant",
+      "sv": "Grön paprika"
+    },
+    "description": {
+      "zh": "健康青椒植株，结果稳定，适合阳台种植。",
+      "en": "Healthy green pepper plant with stable fruiting, ideal for balconies.",
+      "sv": "Frisk paprikaplanta med jämn skörd, perfekt för balkongodling."
+    },
+    "price": 95,
+    "currency": "SEK",
+    "images": [
+      "green-pepper.jpg",
+      "green-pepper-1.jpg"
+    ],
+    "light": {
+      "zh": "全日照到明亮光",
+      "en": "Full sun to bright light",
+      "sv": "Full sol till ljust läge"
+    },
+    "water": {
+      "zh": "每周 2-3 次，保持微湿",
+      "en": "2-3 times weekly, keep soil lightly moist",
+      "sv": "2-3 gånger i veckan, håll jorden lätt fuktig"
+    },
+    "sold": false
+  },
+  {
+    "id": "plant-002",
+    "name": {
+      "zh": "枇杷苗",
+      "en": "Loquat Seedling",
+      "sv": "Mispelplanta"
+    },
+    "description": {
+      "zh": "生长状态良好，叶色浓绿，适合庭院或大花盆。",
+      "en": "Vigorous loquat seedling with deep green leaves, suitable for gardens or large pots.",
+      "sv": "Kraftig mispelplanta med mörkgröna blad, passar trädgård eller stor kruka."
+    },
+    "price": 180,
+    "currency": "SEK",
+    "images": [
+      "loquat.jpg",
+      "loquat-1.jpg",
+      "loquat-2.jpg"
+    ],
+    "light": {
+      "zh": "明亮光线",
+      "en": "Bright light",
+      "sv": "Ljust läge"
+    },
+    "water": {
+      "zh": "每周 1-2 次",
+      "en": "1-2 times per week",
+      "sv": "1-2 gånger i veckan"
+    },
+    "sold": false
+  },
+  {
+    "id": "plant-003",
+    "name": {
+      "zh": "荔枝苗",
+      "en": "Lychee Seedling",
+      "sv": "Litchiplanta"
+    },
+    "description": {
+      "zh": "热带风格叶片，株型紧凑，适合温暖环境养护。",
+      "en": "Compact tropical seedling with decorative foliage, best in warm conditions.",
+      "sv": "Kompakt tropisk planta med dekorativa blad, trivs bäst i varmt klimat."
+    },
+    "price": 210,
+    "currency": "SEK",
+    "images": [
+      "lychee.jpg",
+      "lychee-1.jpg",
+      "lychee-2.jpg"
+    ],
+    "light": {
+      "zh": "明亮散射光",
+      "en": "Bright indirect light",
+      "sv": "Ljust indirekt ljus"
+    },
+    "water": {
+      "zh": "每周 2 次",
+      "en": "Twice per week",
+      "sv": "Två gånger i veckan"
+    },
+    "sold": false
+  },
+  {
+    "id": "plant-004",
+    "name": {
+      "zh": "南瓜苗",
+      "en": "Pumpkin Seedling",
+      "sv": "Pumpaplanta"
+    },
+    "description": {
+      "zh": "长势旺盛，适合露台与庭院，后期可结大果。",
+      "en": "Fast-growing pumpkin seedling for patios and gardens, producing large fruits later.",
+      "sv": "Snabbväxande pumpaplanta för uteplats och trädgård, kan ge stora frukter."
+    },
+    "price": 85,
+    "currency": "SEK",
+    "images": [
+      "pumpkin.jpg",
+      "pumpkin-1.jpg",
+      "pumpkin-2.jpg"
+    ],
+    "light": {
+      "zh": "全日照",
+      "en": "Full sun",
+      "sv": "Full sol"
+    },
+    "water": {
+      "zh": "每周 2-3 次",
+      "en": "2-3 times per week",
+      "sv": "2-3 gånger i veckan"
+    },
+    "sold": false
+  },
+  {
+    "id": "plant-005",
+    "name": {
+      "zh": "西瓜苗",
+      "en": "Watermelon Seedling",
+      "sv": "Vattenmelonplanta"
+    },
+    "description": {
+      "zh": "适合夏季种植，枝叶饱满，易于扩展爬藤。",
+      "en": "Great for summer planting with vigorous vines and lush leaves.",
+      "sv": "Perfekt för sommarodling med kraftiga rankor och frodig bladmassa."
+    },
+    "price": 90,
+    "currency": "SEK",
+    "images": [
+      "water-melon.jpg"
+    ],
+    "light": {
+      "zh": "全日照",
+      "en": "Full sun",
+      "sv": "Full sol"
+    },
+    "water": {
+      "zh": "每周 2-3 次，炎热天增加",
+      "en": "2-3 times weekly, more during hot days",
+      "sv": "2-3 gånger i veckan, mer vid varmt väder"
+    },
+    "sold": false
+  },
+  {
+    "id": "plant-006",
+    "name": {
+      "zh": "芒果苗",
+      "en": "Mango Seedling",
+      "sv": "Mangoplanta"
+    },
+    "description": {
+      "zh": "观赏与果用兼具，叶片挺拔，适合温暖室内外环境。",
+      "en": "Dual-purpose decorative and fruit seedling with upright foliage for warm indoor/outdoor spots.",
+      "sv": "Både prydnads- och fruktplanta med upprätta blad för varma inom- och utomhusmiljöer."
+    },
+    "price": 240,
+    "currency": "SEK",
+    "images": [
+      "mango.jpg"
+    ],
+    "light": {
+      "zh": "明亮光到半日照",
+      "en": "Bright light to partial sun",
+      "sv": "Ljust läge till halvsol"
+    },
+    "water": {
+      "zh": "每周 1-2 次",
+      "en": "1-2 times per week",
+      "sv": "1-2 gånger i veckan"
+    },
+    "sold": false
+  }
+]

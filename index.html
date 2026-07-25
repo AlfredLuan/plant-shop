@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar" aria-label="Site Header">
+        <h1 id="site-title" class="site-title"></h1>
+
+        <nav id="language-switcher" class="language-switcher" aria-label="Language Switcher"></nav>
+      </header>
+
+      <main>
+        <section id="plants-grid" class="plants-grid" aria-live="polite"></section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="purchase-hint"></p>
+        <p>
+          <span id="contact-label"></span>
+          <a id="contact-email-link" class="contact-email-button" href="#"></a>
+        </p>
+      </footer>
+    </div>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image Preview">
+      <button id="lightbox-close" class="lightbox-close" type="button" aria-label="Close Preview">×</button>
+      <img id="lightbox-image" class="lightbox-image" src="" alt="" />
+    </div>
+
+    <template id="plant-card-template">
+      <article class="plant-card">
+        <div class="card-image-wrapper">
+          <img class="card-image" src="" alt="" loading="lazy" decoding="async" />
+          <span class="sold-badge" hidden></span>
+        </div>
+
+        <div class="card-thumbnails"></div>
+
+        <div class="card-content">
+          <h2 class="plant-name"></h2>
+          <p class="plant-price"></p>
+          <p class="plant-description"></p>
+
+          <ul class="plant-meta">
+            <li>
+              <span class="meta-label meta-light-label"></span>
+              <span class="meta-value meta-light-value"></span>
+            </li>
+            <li>
+              <span class="meta-label meta-water-label"></span>
+              <span class="meta-value meta-water-value"></span>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

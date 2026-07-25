@@ -1,0 +1,61 @@
+{
+  "siteTitle": {
+    "zh": "出售我的植物",
+    "en": "Plants for Sale",
+    "sv": "Växter till salu"
+  },
+  "defaultLanguage": "sv",
+  "contactEmail": "hello@example.com",
+  "defaultCurrency": "SEK",
+  "languages": [
+    {
+      "code": "sv",
+      "label": "Svenska"
+    },
+    {
+      "code": "en",
+      "label": "English"
+    },
+    {
+      "code": "zh",
+      "label": "中文"
+    }
+  ],
+  "uiText": {
+    "priceLabel": {
+      "zh": "价格",
+      "en": "Price",
+      "sv": "Pris"
+    },
+    "lightLabel": {
+      "zh": "光照",
+      "en": "Light",
+      "sv": "Ljus"
+    },
+    "waterLabel": {
+      "zh": "浇水",
+      "en": "Water",
+      "sv": "Vattning"
+    },
+    "soldLabel": {
+      "zh": "已售出",
+      "en": "Sold",
+      "sv": "Såld"
+    },
+    "purchaseHint": {
+      "zh": "如果需要购买，请通过邮箱联系我。",
+      "en": "If you would like to buy a plant, please contact me by email.",
+      "sv": "Om du vill köpa en växt, kontakta mig gärna via e-post."
+    },
+    "contactLabel": {
+      "zh": "联系邮箱：",
+      "en": "Contact email:",
+      "sv": "Kontakt e-post:"
+    },
+    "loadError": {
+      "zh": "加载数据失败，请检查 data 文件。",
+      "en": "Failed to load data. Please check files in /data.",
+      "sv": "Kunde inte läsa data. Kontrollera filer i /data."
+    }
+  }
+}

@@ -1,0 +1,375 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1f2a1f;
+  --color-subtle: #5b6b5c;
+  --color-accent: #dff1e3;
+  --color-accent-strong: #4f8a5b;
+  --color-card: #ffffff;
+  --color-border: #e8eee9;
+  --color-shadow: 0 10px 30px rgba(31, 42, 31, 0.08);
+  --radius-large: 18px;
+  --radius-medium: 12px;
+  --radius-small: 8px;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --content-width: 1120px;
+  --transition-fast: 180ms ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Noto Sans SC", "PingFang SC", "Segoe UI", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.site-shell {
+  width: min(100% - 2rem, var(--content-width));
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: var(--space-xl);
+  padding-block: var(--space-xl);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.site-title {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  letter-spacing: 0.01em;
+}
+
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background: #f7faf8;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.3rem;
+}
+
+.language-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-subtle);
+  transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.language-button[aria-pressed="true"] {
+  background: var(--color-accent);
+  color: var(--color-text);
+}
+
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.preview-helper {
+  grid-column: 1 / -1;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  padding: var(--space-xl);
+  background: #fafdfb;
+  box-shadow: var(--color-shadow);
+}
+
+.preview-helper h2 {
+  margin: 0 0 var(--space-sm);
+}
+
+.preview-helper p {
+  margin: 0;
+  color: var(--color-subtle);
+}
+
+.preview-helper-button {
+  margin-top: var(--space-md);
+  border: 0;
+  border-radius: 999px;
+  padding: 0.65rem 1rem;
+  background: var(--color-accent);
+  color: var(--color-text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.preview-helper-feedback {
+  margin-top: var(--space-sm) !important;
+  color: #b54747 !important;
+}
+
+.plant-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-large);
+  box-shadow: var(--color-shadow);
+  overflow: hidden;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.plant-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(31, 42, 31, 0.12);
+}
+
+.card-image-wrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: #f3f6f4;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid var(--color-border);
+  cursor: zoom-in;
+  transition: transform var(--transition-fast);
+}
+
+.plant-card:hover .card-image {
+  transform: scale(1.03);
+}
+
+.sold-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: #1f2a1f;
+  color: #ffffff;
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-small);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card-thumbnails {
+  display: flex;
+  gap: 0.45rem;
+  padding: var(--space-sm) var(--space-sm) 0;
+}
+
+.card-thumbnail-button {
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  padding: 0;
+  background: transparent;
+  width: 3.1rem;
+  height: 3.1rem;
+  cursor: pointer;
+  overflow: hidden;
+  flex: 0 0 auto;
+}
+
+.card-thumbnail-button.is-active {
+  border-color: var(--color-accent-strong);
+  box-shadow: 0 0 0 2px rgba(79, 138, 91, 0.18);
+}
+
+.card-thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: var(--space-lg);
+}
+
+.plant-name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.plant-price {
+  margin: var(--space-xs) 0 var(--space-md);
+  color: var(--color-accent-strong);
+  font-weight: 700;
+}
+
+.plant-description {
+  margin: 0 0 var(--space-md);
+  color: var(--color-subtle);
+}
+
+.plant-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.meta-label {
+  font-weight: 600;
+  margin-right: 0.25rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-lg);
+  color: var(--color-subtle);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer p + p {
+  margin-top: var(--space-sm);
+}
+
+.site-footer a {
+  color: var(--color-accent-strong);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.contact-email-button {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: var(--color-accent);
+  border: 1px solid #cfe6d5;
+  color: #224028;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-email-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(31, 42, 31, 0.12);
+}
+
+.contact-email-button:focus-visible {
+  outline: 2px solid var(--color-accent-strong);
+  outline-offset: 2px;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 20, 15, 0.84);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  z-index: 1000;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-image {
+  margin: 0 auto;
+  max-width: min(92vw, 1000px);
+  max-height: 88vh;
+  border-radius: var(--radius-medium);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #253025;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .site-shell {
+    width: min(100% - 1.2rem, var(--content-width));
+    padding-block: var(--space-lg);
+    gap: var(--space-lg);
+  }
+
+  /* 手机端改为两列，避免一屏只看到一棵植物。 */
+  .plants-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-md);
+  }
+
+  .card-content {
+    padding: var(--space-md);
+  }
+
+  .card-thumbnails {
+    padding: var(--space-xs) var(--space-xs) 0;
+    gap: 0.35rem;
+  }
+
+  .card-thumbnail-button {
+    width: 2.6rem;
+    height: 2.6rem;
+  }
+
+  .plant-name {
+    font-size: 1.05rem;
+  }
+
+  .plant-price,
+  .plant-description,
+  .plant-meta {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-shell {
+    width: min(100% - 0.8rem, var(--content-width));
+  }
+
+  .card-content {
+    padding: 0.85rem;
+  }
+
+  .contact-email-button {
+    margin-left: 0;
+    margin-top: 0.45rem;
+  }
+}
